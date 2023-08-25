@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+$color-dark-gray: #A9A9A9;
+$color-white: #fff;
+$color-ciel: 	#75C2F6;
+
+$card-background-color: #4682A9;
+$card-width: 400px;
+$card-height: 220px;
+
+$full-width: 100vw;
+$full-height: 100vh;
+$font-family-Poppins: 'Poppins';
+$card-bg-img: "https://pbs.twimg.com/media/E1lZrlkVcAMBwPs.jpg:large";
+
+$border-radius-px: 20px;
+
+$polygon-values: 0 1%, 63% 35%, 75% 100%, 0% 100%;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+.container {
+  width: $full-width;
+  height: $full-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-dark-gray;
+  font-family: $font-family-Poppins, sans-serif;
+}
+
+.card {
+  width: $card-width;
+  height: $card-height;
+  background: url($card-bg-img);
+  background-position: 100%,100%;
+  border-radius: $border-radius-px;
+  padding: 10px;
+  color: $color-white;
+  position: relative;
+  box-shadow: 0 10px 10px 7px $color-ciel;
+  transition:all 0.5s;
+  
+  &:hover {
+    transform: scale(1.2);
+  }
+  
+  &::after {
+    content: "";
+    width: 350px;
+    height: 220px;
+    background: $card-background-color;
+    position: absolute;
+    clip-path: polygon($polygon-values);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: $border-radius-px;
+  }
+  
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 15px;
+    z-index: 1;
+  }
+  
+  &-top-left {
+    font-size: 1.5rem;
+    z-index: 1;
+  }
+  
+  &-top-right {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  &-bottom {
+    position: absolute;
+    bottom: 22px;
+    left: 30px;
+    width: 100%;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: $color-white;
+    z-index: 1;
+  }
+  
+  &-bottom-p {
+    span {
+      display: block;
+      padding: 0 0 10px 0;
+      letter-spacing: 4px;
+    }
+  }
+}

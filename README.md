@@ -4,7 +4,7 @@ A simple HTML and CSS template for creating developer cards. Use this template t
 
 ## Preview
 
-[Live Demo](#) https://codepen.io/gianniszisakis/pen/JjwozQy
+https://codepen.io/gianniszisakis/pen/JjwozQy
 
 ## Features
 - Clean and visually appealing developer card design.

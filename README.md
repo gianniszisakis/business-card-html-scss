@@ -22,17 +22,17 @@ git clone https://github.com/your-username/developer-card-template.git
 
 You can customize the developer card's appearance by editing the SCSS variables in the `styles.scss` file.
 
-`$color-dark-gray`: Background color of the container.
-`$color-white`: Text color.
-`$color-ciel`: Box shadow color.
-`$card-background-color`: Card background color.
-`$card-width`: Card width.
-`$card-height`: Card height.
-`$full-width`: Full viewport width.
-`$full-height`: Full viewport height.
-`$font-family-Poppins`: Font family for text.
-`$card-bg-img`: URL for the background image.
-`$border-radius-px`: Border radius for the card.
-`$polygon-values`: Polygon clip-path values for the background.
+- `$color-dark-gray`: Background color of the container.
+- `$color-white`: Text color.
+- `$color-ciel`: Box shadow color.
+- `$card-background-color`: Card background color.
+- `$card-width`: Card width.
+- `$card-height`: Card height.
+- `$full-width`: Full viewport width.
+- `$full-height`: Full viewport height.
+- `$font-family-Poppins`: Font family for text.
+- `$card-bg-img`: URL for the background image.
+- `$border-radius-px`: Border radius for the card.
+- `$polygon-values`: Polygon clip-path values for the background.
 
 After making your customizations, you can compile the SCSS into regular CSS using a tool like Sass.
